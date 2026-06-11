@@ -155,5 +155,42 @@
         }
       }
     ]
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.chenzhi1985/geo-mcp-optimizer",
+    "description": "GEO (Generative Engine Optimization) — 检测品牌在ChatGPT/Claude/Gemini/Perplexity中的引用存在、5维度内容GEO评分(0-100)、竞品AI引用差距分析、品牌引用趋势追踪。6 tools + 2 resources + 2 prompts。",
+    "repository": {
+      "url": "https://github.com/chenzhi1985/geo-mcp-server.git",
+      "source": "github"
+    },
+    "version": "1.0.1",
+    "icons": [
+      {
+        "src": "https://raw.githubusercontent.com/chenzhi1985/geo-mcp-server/master/.github/icon.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ]
+      }
+    ],
+    "packages": [
+      {
+        "registryType": "pypi",
+        "registry": {
+          "url": "https://pypi.org/project/geo-mcp-optimizer/"
+        },
+        "packageName": "geo-mcp-optimizer",
+        "command": {
+          "type": "stdio",
+          "command": "python",
+          "args": [
+            "-m",
+            "geo_mcp_optimizer"
+          ]
+        },
+        "runtime": "python"
+      }
+    ]
   }
 ]
